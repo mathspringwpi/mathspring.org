@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="14px" viewBox="0 0 40 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41 (35326) - http://www.bohemiancoding.com/sketch -->
+    <title>next</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Design" transform="translate(-702.000000, -729.000000)" fill="#FFFFFF">
+            <g id="Learn-More" transform="translate(594.000000, 664.000000)">
+                <g id="next" transform="translate(128.000000, 72.000000) rotate(-270.000000) translate(-128.000000, -72.000000) translate(121.000000, 52.000000)">
+                    <g id="Capa_1">
+                        <path d="M13.7637708,18.936314 L1.30764427,0.32859041 C1.01436364,-0.109530137 0.544007905,-0.109530137 0.250727273,0.32859041 C-0.0425533597,0.766710958 -0.0425533597,1.46935712 0.250727273,1.90747767 L12.1756285,19.7216244 L0.250727273,37.5357712 C-0.0425533597,37.9738918 -0.0425533597,38.6765379 0.250727273,39.1146585 C0.394600791,39.3295855 0.58827668,39.4453155 0.776418972,39.4453155 C0.964561265,39.4453155 1.15823715,39.337852 1.30211067,39.1146585 L13.7582372,20.5069349 C14.0515178,20.0770807 14.0515178,19.3661682 13.7637708,18.936314 L13.7637708,18.936314 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
