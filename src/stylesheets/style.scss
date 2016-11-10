@@ -1,35 +1,14 @@
-@import '_switch.scss';
+// Libraries
 @import 'bootstrap';
 
-/*************** VARIABLES **************/
+// Base
+@import 'base/reset';
+@import 'base/variables';
 
-$green_main: #2ECC71;
-$pink: #F03379;
-$hover_pink: #E5296C;
-$yellow_border: #FDA246;
+// Modules
+@import 'modules/switch.scss';
 
 /*************** GENERAL STYLE **************/
-
-* {
-    box-sizing: border-box;
-}
-
-html, body {
-   font-family: 'Raleway', Helvetica, Arial, "Lucida Grande", sans-serif; 
-}
-
-.clearfix:before, .clearfix:after {
-    content: " ";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
-}
 
 .pink-button {
     width: 200px;
