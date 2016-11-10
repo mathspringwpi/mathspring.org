@@ -1,3 +1,5 @@
+/*************** GENERAL STYLE **************/
+
 * {
     box-sizing: border-box;
 }
@@ -30,6 +32,8 @@ h1, h2, h3, h4, h5, h6 {
     outline:none;
     letter-spacing: 0.1em;
 }
+
+/*************** END GENERAL STYLE **************/
 
 /*************** STYLE FOR NAVIGATION BAR **************/
 
@@ -100,8 +104,9 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /*************** STYLE FOR BIG BANNER **************/
+
 #big-banner {
-    background: url(../images/banner2.png) no-repeat;
+    background: url(../images/banner2.jpg) no-repeat;
 }
 
 #learning-button {
@@ -149,14 +154,55 @@ h1, h2, h3, h4, h5, h6 {
 
 /*************** END STYLE FOR BIG BANNER **************/
 
+/*************** STYLE FOR STATS ABOUT MS **************/
+
+#stat {
+    margin-top: 50px;
+}
+
+#stat h2, #stat p {
+    text-align: center;
+}
+
+#stat h2 {
+    font-weight: bold;
+    font-size: 3em;
+    margin-bottom: 40px;
+}
+
+#stat h2 + p {
+    font-size: 1.5em;
+    width: 70%;
+    margin: 50px auto;
+}
+
+.round-number {
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 1px solid black;
+    text-align: center;
+    width: 75px;
+    height: 75px;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.round-number + p {
+    margin: 20px auto;
+    padding: 20px 20px;
+    border: 1px solid black;
+    width: 65%;
+    border-radius: 10px;
+    line-height: 1.6em;
+    font-size: 1.2em
+}
 
 
 
 
 
-
-
-
+/*************** END STYLE FOR STATS ABOUT MS **************/
 
 
 
