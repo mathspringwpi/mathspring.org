@@ -1,5 +1,12 @@
 @import 'components/_switch.scss';
 @import '../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
+
+/*************** VARIABLES **************/
+
+$green_main: #2ECC71;
+$pink: #F03379;
+$hover_pink: #E5296C;
+
 /*************** GENERAL STYLE **************/
 
 * {
@@ -25,13 +32,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .pink-button {
     width: 200px;
-    background-color: #F03379;
+    background-color: $pink;
     border-radius: 25px;
     color: white;
     padding: 1em;
-    
     border: none;
-    outline:none;
+    outline: none;
     letter-spacing: 0.1em;
 }
 
@@ -45,7 +51,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .site-header {
-    vertical-align: middle;
     padding: 1.8em 1.8em;
     height: 120px;
 }
@@ -57,10 +62,9 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     color: black;
     float: left;
-}
-
-.logo span {
-    color: #2ECC71;
+    span {
+        color: #2ECC71;
+    }
 }
 
 #main_nav {
@@ -68,38 +72,38 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 0.8em; 
 }
 
+.login_field {
+    border-radius: 10px;    
+    padding-left: 30px;
+}
+
 #username-field {
-    border-radius: 10px;
+    @extend .login_field;
     background: url(../images/user.svg) no-repeat scroll 7px 7px;
-    padding-left:30px;
 }
 
 #password-field {
-    margin-left: 1em;
-    margin-right: 1em;
-    border-radius: 10px;
+    @extend .login_field;
+    margin: 0 1em;
     background: url(../images/lock.svg) no-repeat scroll 7px 7px;
-    padding-left:30px;
 }
 
 #login-button {
     border-radius: 25px;
-    border: 1px solid #2ECC71;
+    border: 1px solid $green_main;
     outline: none;
-}
-
-#login-button:hover {
-    background-color: #2ECC71;
+    &:hover {
+        background-color: $green_main;
+    }
 }
 
 .switch-option {
     margin-top: 10px;
-}
-
-.switch-option span {
-    margin-left: 5px;
-    position: relative;
-    top: -12px;
+    span {
+        margin-left: 5px;
+        position: relative;
+        top: -12px;
+    }
 }
 
 /*************** END STYLE FOR NAVIGATION BAR **************/
@@ -112,11 +116,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #learning-button {
+    @extend .pink-button;
     margin-top: 15em; 
-}
-
-#learning-button:hover {
-    background-color: #E5296C;
+    &:hover {
+        background-color: $hover_pink;
+    }
 }
 
 #learning-button + p a {
@@ -126,33 +130,29 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     top: 16px;
     left: -16px;
-}
-
-#learning-button + p a:hover {
-    text-decoration: none;
-    color:  black;
+    &:hover {
+        text-decoration: none;
+        color: black;
+    }
 }
 
 #intro-text {
     margin-top: 100px;
+    h1 {
+        color: white;
+        letter-spacing: 0.1em;
+        font-size: 3em;
+        font-weight: 500;
+    }
+    p {
+        margin-top: 115px;
+        margin-bottom: 115px;
+        font-size: 1.2em;
+        color: white;
+        letter-spacing: 0.1em;
+        line-height: 2.5em;
+    }
 }
-
-#intro-text h1 {
-    color: white;
-    letter-spacing: 0.1em;
-    font-size: 3em;
-    font-weight: 500;
-}
-
-#intro-text p {
-    margin-top: 115px;
-    margin-bottom: 115px;
-    font-size: 1.2em;
-    color: white;
-    letter-spacing: 0.1em;
-    line-height: 2.5em;
-}
-
 
 /*************** END STYLE FOR BIG BANNER **************/
 
@@ -160,22 +160,19 @@ h1, h2, h3, h4, h5, h6 {
 
 #stat {
     margin-top: 50px;
-}
-
-#stat h2, #stat p {
-    text-align: center;
-}
-
-#stat h2 {
-    font-weight: bold;
-    font-size: 3em;
-    margin-bottom: 40px;
-}
-
-#stat h2 + p {
-    font-size: 1.5em;
-    width: 70%;
-    margin: 50px auto;
+    h2, p {
+        text-align: center;
+    }
+    h2 {
+        font-weight: bold;
+        font-size: 3em;
+        margin-bottom: 40px;
+    }
+    h2 + p {
+        font-size: 1.5em;
+        width: 70%;
+        margin: 50px auto;
+    }
 }
 
 .round-number {
@@ -188,16 +185,15 @@ h1, h2, h3, h4, h5, h6 {
     padding: 15px;
     font-weight: bold;
     font-size: 2em;
-}
-
-.round-number + p {
-    margin: 20px auto;
-    padding: 20px 20px;
-    border: 1px solid black;
-    width: 65%;
-    border-radius: 10px;
-    line-height: 1.6em;
-    font-size: 1.2em
+    & + p {
+        margin: 20px auto;
+        padding: 20px 20px;
+        border: 1px solid black;
+        width: 65%;
+        border-radius: 10px;
+        line-height: 1.6em;
+        font-size: 1.2em
+    }
 }
 
 

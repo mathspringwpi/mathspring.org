@@ -5866,6 +5866,7 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+/*************** VARIABLES **************/
 /*************** GENERAL STYLE **************/
 * {
   box-sizing: border-box; }
@@ -5883,7 +5884,7 @@ html, body {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 300; }
 
-.pink-button {
+.pink-button, #learning-button {
   width: 200px;
   background-color: #F03379;
   border-radius: 25px;
@@ -5900,7 +5901,6 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto; }
 
 .site-header {
-  vertical-align: middle;
   padding: 1.8em 1.8em;
   height: 120px; }
 
@@ -5911,41 +5911,37 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   color: black;
   float: left; }
-
-.logo span {
-  color: #2ECC71; }
+  .logo span {
+    color: #2ECC71; }
 
 #main_nav {
   float: right;
   padding-top: 0.8em; }
 
-#username-field {
+.login_field, #username-field, #password-field {
   border-radius: 10px;
-  background: url(../images/user.svg) no-repeat scroll 7px 7px;
   padding-left: 30px; }
 
+#username-field {
+  background: url(../images/user.svg) no-repeat scroll 7px 7px; }
+
 #password-field {
-  margin-left: 1em;
-  margin-right: 1em;
-  border-radius: 10px;
-  background: url(../images/lock.svg) no-repeat scroll 7px 7px;
-  padding-left: 30px; }
+  margin: 0 1em;
+  background: url(../images/lock.svg) no-repeat scroll 7px 7px; }
 
 #login-button {
   border-radius: 25px;
   border: 1px solid #2ECC71;
   outline: none; }
-
-#login-button:hover {
-  background-color: #2ECC71; }
+  #login-button:hover {
+    background-color: #2ECC71; }
 
 .switch-option {
   margin-top: 10px; }
-
-.switch-option span {
-  margin-left: 5px;
-  position: relative;
-  top: -12px; }
+  .switch-option span {
+    margin-left: 5px;
+    position: relative;
+    top: -12px; }
 
 /*************** END STYLE FOR NAVIGATION BAR **************/
 /*************** STYLE FOR BIG BANNER **************/
@@ -5954,9 +5950,8 @@ h1, h2, h3, h4, h5, h6 {
 
 #learning-button {
   margin-top: 15em; }
-
-#learning-button:hover {
-  background-color: #E5296C; }
+  #learning-button:hover {
+    background-color: #E5296C; }
 
 #learning-button + p a {
   color: white;
@@ -5965,45 +5960,39 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   top: 16px;
   left: -16px; }
-
-#learning-button + p a:hover {
-  text-decoration: none;
-  color: black; }
+  #learning-button + p a:hover {
+    text-decoration: none;
+    color: black; }
 
 #intro-text {
   margin-top: 100px; }
-
-#intro-text h1 {
-  color: white;
-  letter-spacing: 0.1em;
-  font-size: 3em;
-  font-weight: 500; }
-
-#intro-text p {
-  margin-top: 115px;
-  margin-bottom: 115px;
-  font-size: 1.2em;
-  color: white;
-  letter-spacing: 0.1em;
-  line-height: 2.5em; }
+  #intro-text h1 {
+    color: white;
+    letter-spacing: 0.1em;
+    font-size: 3em;
+    font-weight: 500; }
+  #intro-text p {
+    margin-top: 115px;
+    margin-bottom: 115px;
+    font-size: 1.2em;
+    color: white;
+    letter-spacing: 0.1em;
+    line-height: 2.5em; }
 
 /*************** END STYLE FOR BIG BANNER **************/
 /*************** STYLE FOR STATS ABOUT MS **************/
 #stat {
   margin-top: 50px; }
-
-#stat h2, #stat p {
-  text-align: center; }
-
-#stat h2 {
-  font-weight: bold;
-  font-size: 3em;
-  margin-bottom: 40px; }
-
-#stat h2 + p {
-  font-size: 1.5em;
-  width: 70%;
-  margin: 50px auto; }
+  #stat h2, #stat p {
+    text-align: center; }
+  #stat h2 {
+    font-weight: bold;
+    font-size: 3em;
+    margin-bottom: 40px; }
+  #stat h2 + p {
+    font-size: 1.5em;
+    width: 70%;
+    margin: 50px auto; }
 
 .round-number {
   margin: 0 auto;
@@ -6015,14 +6004,13 @@ h1, h2, h3, h4, h5, h6 {
   padding: 15px;
   font-weight: bold;
   font-size: 2em; }
-
-.round-number + p {
-  margin: 20px auto;
-  padding: 20px 20px;
-  border: 1px solid black;
-  width: 65%;
-  border-radius: 10px;
-  line-height: 1.6em;
-  font-size: 1.2em; }
+  .round-number + p {
+    margin: 20px auto;
+    padding: 20px 20px;
+    border: 1px solid black;
+    width: 65%;
+    border-radius: 10px;
+    line-height: 1.6em;
+    font-size: 1.2em; }
 
 /*************** END STYLE FOR STATS ABOUT MS **************/
