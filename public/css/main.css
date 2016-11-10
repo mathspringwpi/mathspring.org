@@ -5946,7 +5946,7 @@ h1, h2, h3, h4, h5, h6 {
 /*************** END STYLE FOR NAVIGATION BAR **************/
 /*************** STYLE FOR BIG BANNER **************/
 #big-banner {
-  background: url(../images/banner2.jpg) no-repeat; }
+  background: url(../images/banner2.jpg) no-repeat top center; }
 
 #learning-button {
   margin-top: 15em; }
@@ -5968,7 +5968,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 100px; }
   #intro-text h1 {
     color: white;
-    letter-spacing: 0.1em;
+    letter-spacing: 1.5px;
     font-size: 3em;
     font-weight: 500; }
   #intro-text p {
@@ -5976,19 +5976,21 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 115px;
     font-size: 1.2em;
     color: white;
-    letter-spacing: 0.1em;
+    letter-spacing: 1px;
     line-height: 2.5em; }
 
 /*************** END STYLE FOR BIG BANNER **************/
 /*************** STYLE FOR STATS ABOUT MS **************/
 #stat {
+  margin-bottom: 50px;
   margin-top: 50px; }
   #stat h2, #stat p {
     text-align: center; }
   #stat h2 {
     font-weight: bold;
     font-size: 3em;
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    letter-spacing: 1px; }
   #stat h2 + p {
     font-size: 1.5em;
     width: 70%;
@@ -6007,10 +6009,60 @@ h1, h2, h3, h4, h5, h6 {
   .round-number + p {
     margin: 20px auto;
     padding: 20px 20px;
-    border: 1px solid black;
+    border: 1px solid #F03379;
     width: 65%;
     border-radius: 10px;
     line-height: 1.6em;
     font-size: 1.2em; }
 
+#round-1 {
+  border: 1px solid #F03379; }
+
+#round-2 {
+  border: 1px solid #FDA246; }
+
+#round-3 {
+  border: 1px solid #2ECC71; }
+
+#stat-text1 {
+  border: 1px solid #F03379; }
+
+#stat-text2 {
+  border: 1px solid #FDA246; }
+
+#stat-text3 {
+  border: 1px solid #2ECC71; }
+
 /*************** END STYLE FOR STATS ABOUT MS **************/
+/*************** STYLE FOR TESTIMONY **************/
+#testimony {
+  margin-top: 50px; }
+  #testimony h3 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: bold;
+    letter-spacing: 1px; }
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  left: 50px; }
+
+.testimony-article {
+  margin-bottom: 30px; }
+  .testimony-article p {
+    line-height: 1.7em;
+    letter-spacing: 0.5px; }
+
+/*************** END STYLE FOR TESTIMONY **************/
+/*************** STYLE FOR FOOTER **************/
+footer {
+  margin-bottom: 0;
+  height: 40px;
+  background-color: #2ECC71;
+  color: white;
+  text-align: center;
+  padding: 10px; }
+
+/*************** END STYLE FOR FOOTER **************/
