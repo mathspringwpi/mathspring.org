@@ -1,0 +1,29 @@
+{
+  "name": "landing_page",
+  "version": "1.0.0",
+  "description": "Landing page for MathSpring website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/main.scss public/css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mathspringwpi/mathspring.org.git"
+  },
+  "keywords": [
+    "mathspring",
+    "landingpage"
+  ],
+  "author": "Huy Tran, Hoang Ngo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mathspringwpi/mathspring.org/issues"
+  },
+  "homepage": "https://github.com/mathspringwpi/mathspring.org#readme",
+  "devDependencies": {
+    "node-sass": "^3.11.2",
+    "nodemon": "^1.11.0"
+  }
+}
