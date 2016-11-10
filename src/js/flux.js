@@ -12,7 +12,7 @@ $(function() {
       var coords = '50% ' + yPos + 'px';
 
       // Move the background
-      $bgobj.css({backgroundPosition: coords})
+      $bgobj.css({backgroundPosition: coords});
     });
   });
 });
