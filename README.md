@@ -10,7 +10,7 @@ npm install
 gulp
 ```
 
-# Development Guide
+## Development Guide
 
 The project is using SASS for styling. Transforming and minifying SASS
 to CSS is automated by Gulp. By changing the source code inside `src/` 
