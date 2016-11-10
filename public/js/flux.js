@@ -1,18 +1,1 @@
-$(function() {
-  var $window = $(window);
-
-  // Parallax background effect
-  $('section[data-type="background"]').each(function() {
-    var $bgobj = $(this); // assigning the object
-
-    $window.scroll(function () {
-      var yPos = -($window.scrollTop() / $bgobj.data('speed'));
-      console.log(yPos);
-
-      var coords = '50% ' + yPos + 'px';
-
-      // Move the background
-      $bgobj.css({backgroundPosition: coords})
-    });
-  });
-});
+$(function(){var o=$(window);$('section[data-type="background"]').each(function(){var n=$(this);o.scroll(function(){var a=-(o.scrollTop()/n.data("speed"));console.log(a);var c="50% "+a+"px";n.css({backgroundPosition:c})})})});

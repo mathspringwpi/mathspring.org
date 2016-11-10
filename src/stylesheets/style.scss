@@ -1,5 +1,5 @@
-@import 'components/_switch.scss';
-@import '../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
+@import '_switch.scss';
+@import 'bootstrap';
 
 /*************** VARIABLES **************/
 
@@ -80,13 +80,13 @@ h1, h2, h3, h4, h5, h6 {
 
 #username-field {
     @extend .login_field;
-    background: url(../images/user.svg) no-repeat scroll 7px 7px;
+    background: url(../img/user.svg) no-repeat scroll 7px 7px;
 }
 
 #password-field {
     @extend .login_field;
     margin: 0 1em;
-    background: url(../images/lock.svg) no-repeat scroll 7px 7px;
+    background: url(../img/lock.svg) no-repeat scroll 7px 7px;
 }
 
 #login-button {
@@ -112,7 +112,7 @@ h1, h2, h3, h4, h5, h6 {
 /*************** STYLE FOR BIG BANNER **************/
 
 #big-banner {
-    background: url(../images/banner2.jpg) no-repeat top center;
+    background: url(../img/banner2.jpg) no-repeat top center;
 }
 
 #learning-button {
@@ -265,15 +265,3 @@ footer {
 }
 
 /*************** END STYLE FOR FOOTER **************/
-
-
-
-
-
-
-
-
-
-
-
-

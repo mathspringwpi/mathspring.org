@@ -1,29 +1,36 @@
 {
-  "name": "landing_page",
-  "version": "1.0.0",
-  "description": "Landing page for MathSpring website",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "node-sass --include-path scss scss/main.scss public/css/main.css",
-    "watch-css": "nodemon -e scss -x \"npm run build-css\""
-  },
+  "name": "mathspring.org",
+  "version": "0.0.1",
+  "description": "Landing page for mathspring.org",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mathspringwpi/mathspring.org.git"
   },
+  "author": "Hoang Ngo, Huy Tran",
   "keywords": [
     "mathspring",
     "landingpage"
   ],
-  "author": "Huy Tran, Hoang Ngo",
+  "devDependencies": {
+    "bower": "^1.8.0",
+    "browser-sync": "^2.17.5",
+    "gulp": "^3.9.1",
+    "gulp-bower": "0.0.13",
+    "gulp-clean-css": "^2.0.0",
+    "gulp-eslint": "^3.0.0",
+    "gulp-jsonlint": "^1.1.2",
+    "gulp-nodeunit": "0.0.5",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.3",
+    "gulp-sass": "^2.3.1",
+    "gulp-uglify": "^2.0.0",
+    "jshint-stylish": "^2.2.0",
+    "path": "^0.11.14"
+  },
+  "dependencies": {},
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/mathspringwpi/mathspring.org/issues"
-  },
-  "homepage": "https://github.com/mathspringwpi/mathspring.org#readme",
-  "devDependencies": {
-    "node-sass": "^3.11.2",
-    "nodemon": "^1.11.0"
   }
 }
