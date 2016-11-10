@@ -32,7 +32,8 @@ gulp.task('build-css', function() {
             includePaths: [
                 config.libPath + '/bootstrap-sass/assets/stylesheets'
             ],
-        }).on('error', sass.logError))
+        })
+        .on('error', sass.logError))
         .pipe(minifyCSS())
         .pipe(gulp.dest(config.cssBuildPath))
         .pipe(notify({ message: 'Building CSS complete!' }))
