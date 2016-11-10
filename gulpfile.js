@@ -46,11 +46,11 @@ gulp.task('copy-images', function() {
 });
 
 gulp.task('jshint', function() {
-  return gulp.src('src/js/**/*.js')
-    .pipe(jshint())
-    .pipe(jshint.reporter(jshintStyle))
-    .pipe(jshint.reporter('fail'))
-    .pipe(notify({ message: 'Good JavaScript style!' }));
+    return gulp.src('src/js/**/*.js')
+        .pipe(jshint())
+        .pipe(jshint.reporter(jshintStyle))
+        .pipe(jshint.reporter('fail'))
+        .pipe(notify({ message: 'Good JavaScript style!' }));
 });
 
 gulp.task('compress-js', function() {
@@ -77,4 +77,11 @@ gulp.task('watch', function() {
     gulp.watch('*.html').on('change', browserSync.reload);
 });
 
-gulp.task('default', ['bower', 'build-css', 'compress-js', 'add-libraries', 'copy-images', 'watch']);
+gulp.task('default', [
+    'bower',
+    'build-css',
+    'compress-js',
+    'add-libraries',
+    'copy-images',
+    'watch'
+]);
