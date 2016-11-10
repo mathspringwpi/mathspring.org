@@ -17,20 +17,40 @@
 <header class="site-header" role="banner">
     <div id="wrapper">
         <div class="navbar-header">
-            <h1 class="logo"><span>M</span>ath<span>S</span>pring</h1> 
+            <h1 class="logo"><span>M</span>ath<span>S</span>pring</h1>
         </div>
         <nav id="main_nav" class="nav navbar-nav navbar-right">
-            <form class="form-inline">
-            
-                <div class="form-group"> 
-                    <input type="text" class="form-control nav-login" id="username-field" placeholder="USERNAME">
-                </div><!-- form-group -->
-
+            <form
+                class="form-inline"
+                method="post"
+                name="login"
+                action="http://tutor.mathspring.org/ms/WoLoginServlet"
+            >
+                <input type="hidden" name="action" value="LoginK12_2"/>
+                <input type="hidden" name="skin" value="k12"/>
                 <div class="form-group">
-                    <input type="password" class="form-control nav-login" id="password-field" placeholder="PASSWORD"> 
+                    <input
+                        type="text"
+                        name="uname"
+                        class="form-control nav-login"
+                        id="username-field"
+                        placeholder="USERNAME">
                 </div><!-- form-group -->
-                <button id="login-button" class="btn btn-default">LOGIN</button>
-            </form> 
+                <div class="form-group">
+                    <input
+                        type="password"
+                        name="password"
+                        class="form-control nav-login"
+                        id="password-field"
+                        placeholder="PASSWORD">
+                </div><!-- form-group -->
+                <input
+                    type="submit"
+                    id="login-button"
+                    value="LOGIN"
+                    class="btn btn-default" />
+            </form>
+
             <div class="switch-option">
                 <!-- Rounded switch -->
                 <label class="switch">
@@ -51,15 +71,15 @@
                 <div class="col-sm-8" id="intro-text">
                     <h1>Some Inspiration Slogan Here</h1>
                     <p class="banner-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div><!-- intro-text--> 
+                </div><!-- intro-text-->
                 <div class="col-sm-3 col-sm-offset-1">
                     <button class="btn btn-default" id="learning-button">START LEARNING</button>
                     <p><a href="#">Are you a teacher? Sign up here</a></p>
                 </div><!-- col-md-offset-9 -->
             </div><!-- row -->
         </div><!-- container clearfix -->
-    </article> 
-</section><!-- big-banner --> 
+    </article>
+</section><!-- big-banner -->
 
 <!-- STATS ABOUT MATHSPRING SECTION -->
 <section id="stat">
@@ -82,7 +102,7 @@
                 <p id="stat-text3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
             </div>
         </div>
-    </div> 
+    </div>
 </section>
 
 <hr>
@@ -97,7 +117,7 @@
                     <div class="col-sm-4">
                         <img class="avatar" src="public/img/avatar.svg" alt="">
                     </div><!-- col-sm-4 -->
-                
+
                     <div class="col-xs-8">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt repellendus aspernatur facilis voluptates eius eveniet nihil ut culpa enim veritatis, ab laborum corporis voluptas porro, odit voluptatem, deserunt labore dolores!
                         </p>
@@ -111,7 +131,7 @@
                     <div class="col-sm-4">
                         <img class="avatar" src="public/img/avatar.svg" alt="">
                     </div><!-- col-sm-4 -->
-                
+
                     <div class="col-xs-8">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt repellendus aspernatur facilis voluptates eius eveniet nihil ut culpa enim veritatis, ab laborum corporis voluptas porro, odit voluptatem, deserunt labore dolores!
                         </p>
@@ -125,7 +145,7 @@
                     <div class="col-sm-4">
                         <img class="avatar" src="public/img/avatar.svg" alt="">
                     </div><!-- col-sm-4 -->
-                
+
                     <div class="col-xs-8">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt repellendus aspernatur facilis voluptates eius eveniet nihil ut culpa enim veritatis, ab laborum corporis voluptas porro, odit voluptatem, deserunt labore dolores!
                         </p>
