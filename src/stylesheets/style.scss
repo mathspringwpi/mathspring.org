@@ -80,7 +80,7 @@
 .switch-option {
     margin-top: 10px;
     span {
-        margin-left: 5px;
+        margin: 0 8px;
         position: relative;
         top: -12px;
     }
@@ -94,11 +94,26 @@
     background: url(../img/banner2.jpg) no-repeat top center;
 }
 
-#learning-button {
+#signup-button {
     @extend .pink-button;
     margin-top: 15em; 
     &:hover {
-        background-color: $hover_pink;
+        background-color: $pink - 10;
+    }
+}
+
+#guest-button {
+    width: 200px;
+    background-color: $yellow_border;
+    border-radius: 25px;
+    color: white;
+    padding: 1em;
+    border: none;
+    outline: none;
+    letter-spacing: 0.1em;
+    margin-top: 20px;
+    &:hover {
+        background-color: $yellow_border - 10;
     }
 }
 
@@ -244,3 +259,4 @@ footer {
 }
 
 /*************** END STYLE FOR FOOTER **************/
+

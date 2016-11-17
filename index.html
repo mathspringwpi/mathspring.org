@@ -51,14 +51,13 @@
                     class="btn btn-default" />
             </form>
 
-            <div class="switch-option">
-                <!-- Rounded switch -->
-                <label class="switch">
-                    <input type="checkbox">
-                    <div class="slider round"></div>
+            <div class="onoffswitch">
+                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                <label class="onoffswitch-label" for="myonoffswitch">
+                    <span class="onoffswitch-inner"></span>
+                    <span class="onoffswitch-switch"></span>
                 </label>
-                <span>Are you teacher?</span>
-            </div><!-- switch-option -->
+            </div>
         </nav>
     </div><!-- wrapper -->
 </header>
@@ -73,8 +72,10 @@
                     <p class="banner-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div><!-- intro-text-->
                 <div class="col-sm-3 col-sm-offset-1">
-                    <button class="btn btn-default" id="learning-button">START LEARNING</button>
-                    <p><a href="#">Are you a teacher? Sign up here</a></p>
+                    <button class="btn btn-default" id="signup-button" data-toggle="modal" data-target="#myModal">
+                        SIGN UP
+                    </button>
+                    <button class="btn btn-default" id="guest-button">CHECK IT OUT</button>
                 </div><!-- col-md-offset-9 -->
             </div><!-- row -->
         </div><!-- container clearfix -->
@@ -157,13 +158,53 @@
     </div><!-- container -->
 </section><!-- testimony -->
 
+<!-- MODAL SECTION -->
+<!--MODAL-->
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">
+          <span aria-hidden="true">&times;</span>
+          <span class="sr-only">Close</span>
+          <h4 class="modal-title" id="myModalLabel">
+            <i class="fa fa-envelope"></i>
+            Create new account
+          </h4>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form class="form-inline" role="form">
+          <div class="form-group">
+            <label class="sr-only" for="subscribe-name">Your first name</label>
+            <input type="text" class="form-control" id="subscribe-name" placeholder="Your first name">
+          </div><!-- form-group -->
+          <div class="form-group">
+            <label class="sr-only" for="subscribe-name">Your email</label>
+            <input type="email" class="form-control" id="subscribe-email" placeholder="Your email">
+          </div><!-- form-group -->
+
+          <input type="submit" class="btn btn-danger" value="Subscribe!">
+        </form>
+        <hr>
+
+      </div><!-- modal-body -->
+    </div><!-- modal-content -->
+  </div><!-- modal-dialog -->
+</div>
+
+
+
 <footer>
     © 2016 University of Massachusetts Amherst ~ All Rights Reserved.
 </footer>
 
 <!-- JQUERY AND JS -->
 <script src="public/js/jquery.min.js"></script>
-<script src="public/js/flux.js"></script>
+<!-- <script src="node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+ -->
+<script src="public/js/bootstrap.min.js"></script> 
+<script src="public/js/parallax.js"></script>
 
 </body>
 </html>
