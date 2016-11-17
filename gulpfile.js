@@ -60,7 +60,10 @@ gulp.task('compress-js', function() {
 });
 
 gulp.task('add-libraries', function() {
-  return gulp.src([config.libPath + '/jquery/dist/jquery.min.js'])
+  return gulp.src([
+        config.libPath + '/jquery/dist/jquery.min.js',
+        config.libPath + '/bootstrap-sass/assets/javascripts/bootstrap.min.js'
+    ])
     .pipe(gulp.dest(config.jsBuildPath));
 });
 
