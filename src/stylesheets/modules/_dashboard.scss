@@ -71,6 +71,7 @@ $progress_66_green: $green-main;
 
 #math-section {
     background: url(../img/wallpaper-icon.png) repeat, #F2F2F2;
+    padding-bottom: 30px;
 }
 // .visible { visibility: hidden; }
 
@@ -84,6 +85,7 @@ $progress_66_green: $green-main;
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
+    opacity: 0.90;
 
     &:after {
         border-radius: 0;
