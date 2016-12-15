@@ -32,17 +32,17 @@
 }
 
 .site-header {
-    padding: 1.8em 1.8em;
-    height: 120px;
+    padding: 1.8em 1.8em 0 1.8em;
+    height: 99px;
 }
 
 .logo {
-    font-size: 1.3em;
+    margin: 35px 50px -7px;
+    font-size: 3em;
     font-weight: 400;
-    letter-spacing: 0.1em;
+    letter-spacing: .1em;
     text-transform: uppercase;
-    color: black;
-    float: left;
+    color: #000;
     span {
         color: #2ECC71;
     }
@@ -50,11 +50,11 @@
 
 #main_nav {
     float: right;
-    padding-top: 0.8em; 
+    padding-top: 0.8em;
 }
 
 .login_field {
-    border-radius: 10px;    
+    border-radius: 10px;
     padding-left: 30px;
 }
 
@@ -92,12 +92,13 @@
 /*************** STYLE FOR BIG BANNER **************/
 
 #big-banner {
+    height: 480px;
     background: url(../img/banner2.jpg) no-repeat top center;
 }
 
 #signup-button {
     @extend .pink-button;
-    margin-top: 15em; 
+    margin-top: 15em;
     &:hover {
         background-color: $pink - 10;
     }
@@ -141,7 +142,6 @@
     }
     p {
         margin-top: 56px;
-        margin-bottom: 115px;
         font-size: 1.2em;
         color: white;
         letter-spacing: 1px;
