@@ -1,0 +1,31 @@
+#pots {
+    min-height: 100%;
+    margin-top: 1px;
+    padding: 70px;
+    background-color: gray;
+    .row:not(:last-child) {
+        margin-bottom: 55px;
+    }
+}
+
+#fixed-footer {
+    bottom: 0;
+    position:fixed;
+    z-index: 150;
+    width: 100%;
+    _position:absolute;
+    _top:expression(eval(document.documentElement.scrollTop+
+        (document.documentElement.clientHeight-this.offsetHeight)));
+    height: 50px;
+}
+
+.fixed-header {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: yellow;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
