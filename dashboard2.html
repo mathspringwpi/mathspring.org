@@ -2,7 +2,12 @@
 
 <html>
 <head>
+    <!-- TEMPORARY, ADD TO PUBLIC FOLDER LATER -->
+    <link rel="stylesheet" href="src/libs/vex/dist/css/vex.css" />
+    <link rel="stylesheet" href="src/libs/vex/dist/css/vex-theme-os.css" />
+
     <link rel="stylesheet" href="public/css/style.css">
+
 </head>
 
 <body>
@@ -43,7 +48,19 @@
 <section id="pots">
     <div class="container">
         <div class="row">
-            <div class="col-md-3 text-center"><img src="public/img/mainpot.png" alt=""></div> 
+            <div 
+                class="col-md-3 text-center topic" 
+                topicTitle="Fraction Review" 
+                totalProblem="50" 
+                completeProblem="45"
+                onclick="showOverlay(
+                    this.getAttribute('topicTitle'),
+                    this.getAttribute('completeProblem'),
+                    this.getAttribute('totalProblem')
+                )"
+            >
+                <img src="public/img/mainpot.png" alt="">
+            </div> 
             <div class="col-md-3 text-center"><img src="public/img/mainpot.png" alt=""></div> 
             <div class="col-md-3 text-center"><img src="public/img/mainpot.png" alt=""></div> 
             <div class="col-md-3 text-center"><img src="public/img/mainpot.png" alt=""></div> 
@@ -81,6 +98,10 @@
 <script src="public/js/jquery.min.js"></script>
 <script src="public/js/bootstrap.min.js"></script>
 <!-- <script src="public/js/custom-animate.js"></script> -->
+
+<script src="src/libs/vex/dist/js/vex.combined.min.js"></script>
+<script>vex.defaultOptions.className = 'vex-theme-os'</script>
+<script src="public/js/vex-demo.js"></script>
 
 </body>
 
