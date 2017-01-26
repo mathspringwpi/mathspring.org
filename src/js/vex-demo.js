@@ -38,7 +38,6 @@ function showOverlay(title, numComplete, numTotal) {
             '</div><!-- section-panel -->',
         ].join(''),
         onSubmit: function() {
-            location.href = '/index.html';
         },
     });
 }

@@ -15,7 +15,7 @@
 <header class="site-header" role="banner">
     <div id="wrapper">
         <div class="navbar-header">
-            <h1 class="logo"><span>M</span>ath<span>S</span>pring</h1>
+            <h1 class="logo"><img src="public/img/MS Mini Logo.svg" alt=""></h1>
         </div><!-- navbar-header -->
 
         <nav id="main_nav" class="nav navbar-nav navbar-right">
@@ -43,55 +43,112 @@
     </div><!-- wrapper -->
 </header>  
 
-
-<!-- ALL POTS SECTION -->
-<section id="pots">
-    <div class="container">
-        <div class="row">
-            <div 
-                class="col-md-3 text-center topic" 
-                topicTitle="Fraction Review" 
-                totalProblem="50" 
-                completeProblem="45"
-                onclick="showOverlay(
-                    this.getAttribute('topicTitle'),
-                    this.getAttribute('completeProblem'),
-                    this.getAttribute('totalProblem')
-                )"
-            >
-                <img src="public/img/mainpot.png" alt="">
-            </div> 
-            <div class="col-md-3 text-center"><img src="public/img/mainpot.png" alt=""></div> 
-            <div class="col-md-3 text-center"><img src="public/img/mainpot.png" alt=""></div> 
-            <div class="col-md-3 text-center"><img src="public/img/mainpot.png" alt=""></div> 
-        </div><!-- row -->
-
-        <div class="row">
-            <div class="col-md-3 text-center"><img src="public/img/mainpot.png" alt=""></div> 
-            <div class="col-md-3 text-center"><img src="public/img/mainpot.png" alt=""></div> 
-            <div class="col-md-3 text-center"><img src="public/img/mainpot.png" alt=""></div> 
-            <div class="col-md-3 text-center"><img src="public/img/mainpot.png" alt=""></div> 
-        </div><!-- row -->
-
-        <div class="row">
-            <div class="col-md-3 text-center"><img src="public/img/mainpot.png" alt=""></div> 
-            <div class="col-md-3 text-center"><img src="public/img/mainpot.png" alt=""></div> 
-            <div class="col-md-3 text-center"><img src="public/img/mainpot.png" alt=""></div> 
-            <div class="col-md-3 text-center"><img src="public/img/mainpot.png" alt=""></div> 
-        </div><!-- row -->
-
-        <div class="row">
-            <div class="col-md-3 text-center"><img src="public/img/mainpot.png" alt=""></div> 
-            <div class="col-md-3 text-center"><img src="public/img/mainpot.png" alt=""></div> 
-            <div class="col-md-3 text-center"><img src="public/img/mainpot.png" alt=""></div> 
-            <div class="col-md-3 text-center"><img src="public/img/mainpot.png" alt=""></div> 
-        </div><!-- row -->
-    </div><!-- container -->
+<section id="toggle-nav">
+    <ul class="nav nav-tabs">
+        <li class="toggle-tab-custom-1 active autofocus"><a data-toggle="tab" href="#my_garden">My Garden</a></li>
+        <li class="toggle-tab-custom-2"><a data-toggle="tab" href="#my_progress">My Progress</a></li>
+    </ul>
 </section>
 
+<div class="tab-content">
+    <div id="my_garden" class="tab-pane fade in active">
+        <!-- ALL POTS SECTION -->
+        <section id="pots">
+            <div class="container">
+                <div class="row">
+                    <div 
+                        class="col-md-3 text-center topic" 
+                        topicTitle="Fraction Review" 
+                        totalProblem="50" 
+                        completeProblem="45"
+                        onclick="showOverlay(
+                            this.getAttribute('topicTitle'),
+                            this.getAttribute('completeProblem'),
+                            this.getAttribute('totalProblem')
+                        )"
+                    >
+                        <img src="public/img/mainpot.png" alt="">
+                    </div> 
+                    <div 
+                        class="col-md-3 text-center topic" 
+                        topicTitle="Fraction Review" 
+                        totalProblem="50" 
+                        completeProblem="45"
+                        onclick="showOverlay(
+                            this.getAttribute('topicTitle'),
+                            this.getAttribute('completeProblem'),
+                            this.getAttribute('totalProblem')
+                        )"
+                    >
+                        <img src="public/img/mainpot.png" alt="">
+                    </div> 
+                    <div 
+                        class="col-md-3 text-center topic" 
+                        topicTitle="Demo lesson" 
+                        totalProblem="100" 
+                        completeProblem="30"
+                        onclick="showOverlay(
+                            this.getAttribute('topicTitle'),
+                            this.getAttribute('completeProblem'),
+                            this.getAttribute('totalProblem')
+                        )"
+                    >
+                        <img src="public/img/mainpot.png" alt="">
+                    </div> 
+                    <div 
+                        class="col-md-3 text-center topic" 
+                        topicTitle="Fraction Review" 
+                        totalProblem="50" 
+                        completeProblem="45"
+                        onclick="showOverlay(
+                            this.getAttribute('topicTitle'),
+                            this.getAttribute('completeProblem'),
+                            this.getAttribute('totalProblem')
+                        )"
+                    >
+                        <img src="public/img/mainpot.png" alt="">
+                    </div> 
+                </div><!-- row -->
+
+                <div class="row">
+                    <div class="col-md-3 text-center"><img src="public/img/mainpot.png" alt=""></div> 
+                    <div class="col-md-3 text-center"><img src="public/img/mainpot.png" alt=""></div> 
+                    <div class="col-md-3 text-center"><img src="public/img/mainpot.png" alt=""></div> 
+                    <div class="col-md-3 text-center"><img src="public/img/mainpot.png" alt=""></div> 
+                </div><!-- row -->
+
+                <div class="row">
+                    <div class="col-md-3 text-center"><img src="public/img/mainpot.png" alt=""></div> 
+                    <div class="col-md-3 text-center"><img src="public/img/mainpot.png" alt=""></div> 
+                    <div class="col-md-3 text-center"><img src="public/img/mainpot.png" alt=""></div> 
+                    <div class="col-md-3 text-center"><img src="public/img/mainpot.png" alt=""></div> 
+                </div><!-- row -->
+
+                <div class="row">
+                    <div class="col-md-3 text-center"><img src="public/img/mainpot.png" alt=""></div> 
+                    <div class="col-md-3 text-center"><img src="public/img/mainpot.png" alt=""></div> 
+                    <div class="col-md-3 text-center"><img src="public/img/mainpot.png" alt=""></div> 
+                    <div class="col-md-3 text-center"><img src="public/img/mainpot.png" alt=""></div> 
+                </div><!-- row -->
+            </div><!-- container -->
+        </section>
+    </div><!-- student -->
+
+    <div id="my_progress" class="tab-pane fade">
+    </div>
+</div><!-- tab-content -->
+
+
 <!-- FIXED FOOTER, BUTTON FOR GETTING STARTED -->
-<footer id="fixed-footer">
-    <p>Hello world</p>
+<footer id="big-working-button">
+    <div class="container">
+        <div class="row">
+            <h1>Continue Practicing</h1> 
+            <p>Have a good time working on these math problems</p>
+        </div><!-- row -->
+    </div><!-- container -->
+    <a href="#">
+    <span class="link-spanner"></span>
 </footer>
 
 <!-- SCRIPT - LIBRARIES -->

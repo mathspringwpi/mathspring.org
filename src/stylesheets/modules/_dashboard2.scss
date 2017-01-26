@@ -1,10 +1,12 @@
 #pots {
     min-height: 100%;
-    margin-top: 1px;
-    padding: 70px;
-    background-color: gray;
-    .row:not(:last-child) {
-        margin-bottom: 55px;
+    // margin-top: 1px;
+    padding: 50px;
+    background: url(../img/background-garden.png);
+
+    .row {
+        margin-top: 40px;
+        margin-bottom: 121px;
     }
 }
 
@@ -16,7 +18,7 @@
     _position:absolute;
     _top:expression(eval(document.documentElement.scrollTop+
         (document.documentElement.clientHeight-this.offsetHeight)));
-    height: 50px;
+    height: 150px;
 }
 
 .fixed-header {
@@ -29,3 +31,43 @@
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
 }
+
+#toggle-nav {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus
+ {
+    background-color:#2ECC71;
+    font-weight:bolder;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    color:white;
+}
+.nav-tabs > li > a
+ {
+    background-color: #FFE234;
+    font-weight:bolder;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    color:white;
+    transition: 0.4s background ease;
+    &:hover {
+        background: #FFE234 - 15;
+    }
+}
+
+.toggle-tab-custom-1 {
+    text-align: center;
+    width: 50%;
+}
+
+.toggle-tab-custom-2 {
+    text-align: center;
+    width: 50%;
+}
+
