@@ -1,3 +1,8 @@
+html {
+    overflow: -moz-scrollbars-vertical; 
+    overflow-y: scroll;
+}
+
 #pots {
     min-height: 100%;
     // margin-top: 1px;
@@ -71,35 +76,56 @@
     width: 50%;
 }
 
-#talkbubble {
-   width: 240px;
-   height: 150px;
-   top: -190px;
-   background: red;
-   position: absolute;
-   -moz-border-radius:    10px;
-   -webkit-border-radius: 10px;
-   border-radius:         10px;
+.talkbubble {
+    width: 250px;
+    top: -100px;
+    background: white;
+    position: absolute;
+    -moz-border-radius:    10px;
+    -webkit-border-radius: 10px;
+    border-radius:         10px;
+    
+    p {
+        margin-top: 10px;
+        padding: 10px 5px;
+        width: 100%;
+        text-align: center;
+    }
 }
 
-#talkbubble:before {
-   content:"";
-   position: absolute;
-   top: 100%;
-   left: 115px;
-   width: 0;
-   height: 0;
-   border-right: 13px solid transparent;
-   border-top: 26px solid red;
-   border-left: 13px solid transparent;
+.talkbubble:before {
+    left: 46%;
+    content:"";
+    position: absolute;
+    top: 100%;
+    width: 0;
+    height: 0;
+    border-right: 13px solid transparent;
+    border-top: 26px solid white;
+    border-left: 13px solid transparent;
+}
+
+.pot-image {
+    transition: all .4s ease-in-out;
+    &:hover {
+        transform: scale(1.2);
+    }
 }
 
 div[topicTitle] {
-    &:hover > div {
+    img:hover {
         cursor: pointer;
-        display: block;
     }
-    & > div {
-        display: none;
+    img:hover ~ div {
+        opacity: 1;
     }
+    div {
+        opacity: 0;
+        transition: all .4s ease;
+    }
+}
+
+// DEMO PURPOSE CHANGE THIS
+.class-name {
+    background: red;
 }

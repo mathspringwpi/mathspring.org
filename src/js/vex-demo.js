@@ -9,9 +9,46 @@ function showOverlay(title, numComplete, numTotal) {
     } else {
         className = 'sixty-six-progress';
     }
-    vex.dialog.buttons.YES.text = "Try this";
-    vex.dialog.buttons.NO.text = "Back";
+
+    var buttons = [];
+    if (Number(numComplete) === 0) {
+        buttons = [
+            $.extend({}, vex.dialog.buttons.NO, {
+                className: 'class-name',
+                text: 'Button1',
+                click: function($vexContent, event) {
+                    window.location='http://www.example.com'; 
+                }
+            })
+        ];
+    } else {
+        buttons = [
+            $.extend({}, vex.dialog.buttons.NO, {
+                className: 'class-name',
+                text: 'Button1',
+                click: function($vexContent, event) {
+                    window.location='http://www.example.com'; 
+                }
+            }),
+            $.extend({}, vex.dialog.buttons.NO, {
+                className: 'class-name',
+                text: 'Button2',
+                click: function($vexContent, event) {
+                    console.log("Hello world");
+                }
+            }),
+            $.extend({}, vex.dialog.buttons.NO, {
+                className: 'class-name',
+                text: 'Button3',
+                click: function($vexContent, event) {
+                    console.log("Hello world");
+                }
+            })
+        ];
+    }
+
     vex.dialog.open({
+        buttons: buttons,
         input: [
             '<style>',
                 '.vex-custom-field-wrapper {',
