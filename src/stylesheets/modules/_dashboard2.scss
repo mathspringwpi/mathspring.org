@@ -71,3 +71,35 @@
     width: 50%;
 }
 
+#talkbubble {
+   width: 240px;
+   height: 150px;
+   top: -190px;
+   background: red;
+   position: absolute;
+   -moz-border-radius:    10px;
+   -webkit-border-radius: 10px;
+   border-radius:         10px;
+}
+
+#talkbubble:before {
+   content:"";
+   position: absolute;
+   top: 100%;
+   left: 115px;
+   width: 0;
+   height: 0;
+   border-right: 13px solid transparent;
+   border-top: 26px solid red;
+   border-left: 13px solid transparent;
+}
+
+div[topicTitle] {
+    &:hover > div {
+        cursor: pointer;
+        display: block;
+    }
+    & > div {
+        display: none;
+    }
+}
