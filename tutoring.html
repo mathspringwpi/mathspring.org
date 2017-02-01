@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <!-- TEMPORARY, ADD TO PUBLIC FOLDER LATER -->
+    <link rel="stylesheet" href="src/libs/vex/dist/css/vex.css" />
+    <link rel="stylesheet" href="src/libs/vex/dist/css/vex-theme-os.css" />
+
+    <link rel="stylesheet" href="public/css/style.css">
+
+</head>
+
+<body>
+<!-- NAVIGATION BAR -->
+<header class="site-header" role="banner">
+    <div id="wrapper">
+        <div class="navbar-header">
+            <img class="logo" src="public/img/MS Mini Logo.svg" alt="">
+        </div><!-- navbar-header -->
+
+        <nav id="main_nav" class="nav navbar-nav navbar-right">
+            <li class="dropdown dropdown-position custom-dropdown">
+                <a  href="#"
+                    class="dropdown-toggle custom-dropdown-toggle"
+                    data-toggle="dropdown" 
+                    role=button
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                >
+                    <i><img src="public/img/avatar.svg" alt=""></i>
+                    &nbsp;
+                    HUY TRAN
+                    <span class="caret"></span>
+                </a><!-- dropdown-toggle -->
+
+                <ul class="dropdown-menu">
+                    <li><a href="">HELP</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="">LOGOUT</a></li>
+                </ul><!-- dropdown-menu -->
+            </li><!-- dropdown -->
+        </nav>
+    </div><!-- wrapper -->
+</header>  
+
+<section id="navigation-back">
+    <div class="col-md-6">My Progress</div>
+    <div class="col-md-6">My Garden</div>
+</section>
+
+<section id="main-tutoring">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1 vertical-button">
+                <div><img src="public/img/speaker.svg" alt=""></div>
+                <div><img src="public/img/question-mark.svg" alt=""></div>
+                <div><img src="public/img/menu.svg" alt=""></div>
+            </div>
+            <div class="col-md-7 main-tutoring-frame">
+                <div class="main-tutoring-panel">
+                    
+                </div>
+                <div class="row buttons-below">
+                    <div class="col-sm-3">
+                        <img src="public/img/lightbulb.svg" alt="">Hint
+                        
+                    </div>
+                    <div class="col-sm-3 col-md-offset-1">
+                        <img src="public/img/reload.svg" alt="">Replay Hint
+                        
+                    </div>
+                    <div class="col-sm-3 col-md-offset-1">
+                        <img src="public/img/right-arrow.svg" alt="">Next Problem
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 virtual-character">
+                
+            </div>  
+        </div>
+    </div>
+</section>
+
+
+<!-- SCRIPT - LIBRARIES -->
+<script src="public/js/jquery.min.js"></script>
+<script src="public/js/bootstrap.min.js"></script>
+<!-- <script src="public/js/custom-animate.js"></script> -->
+
+<script src="src/libs/vex/dist/js/vex.combined.min.js"></script>
+<script>vex.defaultOptions.className = 'vex-theme-os'</script>
+<script src="public/js/vex-demo.js"></script>
+
+</body>
+
+</html>
+        

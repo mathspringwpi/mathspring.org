@@ -1,0 +1,115 @@
+#navigation-back {
+    display: inline-block;
+    color: white;
+    margin-top: -10px;
+    font-weight: bold;
+    font-size: 1.3em;
+    width: 100%;
+    div {
+        text-align: center;
+        padding: 10px 0;
+        transition: all .4s ease;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:nth-child(1) {
+            background: #2ECC71;
+
+            &:hover {
+                background: #2ECC71 - 20;
+            }
+        } 
+
+        &:nth-child(2) {
+            background: #FFE234;
+
+            &:hover {
+                background: #FFE234 - 20;
+            }
+        }
+    }
+}
+
+#main-tutoring {
+    background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)),
+                rgba(0,0,0,0.40) url('../img/banner2.jpg') no-repeat center;
+    background-size: cover;
+    color: #fff;
+    text-rendering: optimizeLegibility;
+    margin-top: -5px;
+    padding-top: 60px;
+    min-height: 680px;
+    max-height: 100%;
+
+    .vertical-button {
+        list-style: none; 
+        display: inline-block;
+
+        div {
+            background: white;
+            margin-bottom: 20px;
+            width: 50px;
+            height: 50px;
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+            &:nth-child(1) > img {
+                padding-top: 13px;
+            }
+            &:nth-child(2) > img {
+                padding-top: 10px;
+            }
+            &:nth-child(3) > img {
+                padding-top: 15px;
+            }
+        } 
+    }
+
+    .main-tutoring-frame {
+        height: 500px;
+        background: red;
+        margin-right: 75px;
+        .main-tutoring-panel {
+            height: 500px;
+        }
+    }
+
+    .virtual-character {
+        height: 500px;
+        background: blue;
+    }
+
+    .buttons-below {
+        margin-top: 25px;
+        margin-left: 25px;
+        color: black;
+        .col-sm-3 {
+            height: 50px;
+            background: white;
+            border: 1px solid black;
+            text-align: center;
+            padding-top: 14px;
+
+            img {
+                transform: scale(0.8);
+                position: absolute;
+                left: 10px;
+            }
+
+            &:nth-child(1) img {
+                top: 5px;
+            }
+
+            &:nth-child(2) img {
+                top: 9px;
+            }
+
+            &:nth-child(3) img {
+                top: 8px;
+            }
+        }
+    }
+}
