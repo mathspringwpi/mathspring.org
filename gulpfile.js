@@ -1,3 +1,4 @@
+
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 const minifyCSS = require('gulp-clean-css');
@@ -30,7 +31,8 @@ gulp.task('build-css', function() {
         .pipe(sass({
             style: 'compressed',
             includePaths: [
-                config.libPath + '/bootstrap-sass/assets/stylesheets'
+                config.libPath + '/bootstrap-sass/assets/stylesheets',
+                config.libPath + '/vex/css'
             ],
         })
         .on('error', sass.logError))
@@ -62,7 +64,8 @@ gulp.task('compress-js', function() {
 gulp.task('add-libraries', function() {
   return gulp.src([
         config.libPath + '/jquery/dist/jquery.min.js',
-        config.libPath + '/bootstrap-sass/assets/javascripts/bootstrap.min.js'
+        config.libPath + '/bootstrap-sass/assets/javascripts/bootstrap.min.js',
+        config.libPath + '/vex/js/vex.min.js',
     ])
     .pipe(gulp.dest(config.jsBuildPath));
 });
