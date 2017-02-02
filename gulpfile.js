@@ -83,6 +83,14 @@ gulp.task('watch', function() {
     gulp.watch('*.html').on('change', browserSync.reload);
 });
 
+gulp.task('build', [
+    'bower',
+    'build-css',
+    'compress-js',
+    'add-libraries',
+    'copy-images',
+]);
+
 gulp.task('default', [
     'bower',
     'build-css',
