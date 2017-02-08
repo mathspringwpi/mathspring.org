@@ -33,21 +33,23 @@
 }
 
 #main-tutoring {
-    background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)),
+    background: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.50)),
                 rgba(0,0,0,0.40) url('../img/banner2.jpg') no-repeat center;
     background-size: cover;
     color: #fff;
     text-rendering: optimizeLegibility;
     margin-top: -5px;
     padding-top: 60px;
-    min-height: 680px;
+    min-height: 750px;
     max-height: 100%;
 
     .vertical-button {
         list-style: none; 
         display: inline-block;
+        margin-top: 75px;
 
         div {
+            border-radius: 5px;
             background: white;
             margin-bottom: 20px;
             width: 50px;
@@ -62,17 +64,24 @@
             &:nth-child(2) > img {
                 padding-top: 10px;
             }
-            &:nth-child(3) > img {
+
+            .custom-dropdown-toggle img {
                 padding-top: 15px;
+                width: 35px;
+                height: 35px;
+            }
+
+            &:hover {
+                cursor: pointer;
+                background: white - 10;
             }
         } 
     }
 
     .main-tutoring-frame {
-        height: 500px;
-        background: red;
         margin-right: 75px;
         .main-tutoring-panel {
+            background: red;
             height: 500px;
         }
     }
@@ -80,18 +89,24 @@
     .virtual-character {
         height: 500px;
         background: blue;
+        margin-top: 75px;
     }
 
     .buttons-below {
-        margin-top: 25px;
-        margin-left: 25px;
+        margin-left: 30px;
+        margin-bottom: 25px;
         color: black;
-        .col-sm-3 {
+        .main-tutoring-button {
             height: 50px;
             background: white;
-            border: 1px solid black;
             text-align: center;
             padding-top: 14px;
+            border-radius: 5px;
+
+            &:hover {
+                cursor: pointer;
+                background: white - 10;
+            }
 
             img {
                 transform: scale(0.8);
