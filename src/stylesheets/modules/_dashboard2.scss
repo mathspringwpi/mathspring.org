@@ -6,12 +6,25 @@ html {
 #pots {
     min-height: 100%;
     // margin-top: 1px;
-    padding: 50px;
-    background: url(../img/background-garden.png);
+    padding: 50px 50px 150px 50px;
+    background: url(../img/bgv1.png);
+    background-size: cover;
 
     .row {
         margin-top: 40px;
-        margin-bottom: 121px;
+        margin-bottom: 80px;
+    }
+
+    img {
+        padding: 20px;
+        border: 1px solid #2ECC71;
+        border-radius: 15%;
+        // background: rgba(0, 0, 0, 0.5), #2ECC71;
+        background-color: rgba(46, 204, 113, 0.3);
+        transition: all 0.4s ease;
+        &:hover {
+            background-color: rgba(46, 204, 113, 0.8);
+        }
     }
 }
 
@@ -103,13 +116,6 @@ html {
     border-right: 13px solid transparent;
     border-top: 26px solid white;
     border-left: 13px solid transparent;
-}
-
-.pot-image {
-    transition: all .4s ease-in-out;
-    &:hover {
-        transform: scale(1.2);
-    }
 }
 
 div[topicTitle] {

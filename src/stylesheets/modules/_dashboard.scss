@@ -36,6 +36,7 @@ $progress_66_green: $green-main;
 //   background-image: url('empty.gif');
 // }   
 #big-working-button {
+    padding-top: 15px;
     position:fixed;
     bottom: 0;
     z-index: 150;
@@ -45,13 +46,13 @@ $progress_66_green: $green-main;
         (document.documentElement.clientHeight-this.offsetHeight)));
     height: 150px;
     text-align: center;
-    background: #006739;
+    background: #2ECC71 - 20;
      // background: url(http://www.w3schools.com/css/klematis.jpg) no-repeat, #282d37;
     color: white;
     transition: background-color 0.5s ease;
     &:after {
         content: "";
-        background: url(../img/pot-wallpaper.png) repeat;
+        background: #2ECC71;
         opacity: 0.1;
         top: 0;
         left: 0;
@@ -69,6 +70,7 @@ $progress_66_green: $green-main;
         letter-spacing: 1px;
     }
     &:hover {
+        cursor: pointer;
         text-decoration: none;
         background: $green-main;
     }
