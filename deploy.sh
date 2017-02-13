@@ -16,7 +16,8 @@ scp favicon.ico $uname@mathseeds.wpi.edu:~
 scp manifest.json $uname@mathseeds.wpi.edu:~
 scp mstile-150x150.png $uname@mathseeds.wpi.edu:~
 scp -r public/ $uname@mathseeds.wpi.edu:~
-ssh -t $uname@mathseeds.wpi.edu "sudo mv index.html \
+ssh -t $uname@mathseeds.wpi.edu "sudo rm -r /var/www/html/public &&
+    sudo mv index.html \
     android-chrome-192x192.png \
     android-chrome-256x256.png \
     apple-touch-icon.png \
